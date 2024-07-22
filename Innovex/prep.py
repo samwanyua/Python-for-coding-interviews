@@ -188,3 +188,23 @@ keys = ['name', 'age', 'city']
 values = ['Alice', 25, 'Nairobi']
 person_details = {key : value for key, value in zip(keys,values)}
 print(person_details)
+
+# shallow copy
+# Copies the outer container but not the contents inside. 
+# Changes to inner elements affect both the original and the copy.
+
+import copy
+original_list = [1,[2,3],4]
+shallow_copy = copy.copy(original_list)
+shallow_copy[1][0] = 'changed'
+print(original_list)
+print(shallow_copy)
+
+# deep copy
+# Copies everything, including contents inside the outer container. 
+# Changes to the copy do not affect the original.
+original = [1,[3,4],7]
+deep_copy = copy.deepcopy(original)
+deep_copy[1] [0] = 'changed'
+print(original)
+print(deep_copy)
