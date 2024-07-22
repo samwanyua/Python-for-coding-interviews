@@ -119,3 +119,46 @@ def print_info(**kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 print_info(name="Wanyua", role="Backend Developer", company="Innovex")
+
+# local scope -scope inside a function
+def func():
+    local_var =10
+    print(local_var) # local variable, accessed only here
+func()
+
+# Enclosing scope - scope of any enclosing function, used in nested functions
+def outer_function():
+    outer_var = 'outer'
+    def inner_function():
+        inner_var = 'inner'
+        print(outer_var) # accessible here
+
+    inner_function()
+outer_function()
+
+
+#  Global scope - accessible throughout the module
+global_var = 'global'
+def my_function():
+    print(global_var)
+my_function()
+
+# modifying global variables
+cout = 0
+def increment():
+    global cout
+    cout +=1
+increment()
+print(cout)
+
+# Built in scope - example; functions, exceptions
+print(len([1,2,3,4,5,6,67,8,8,5,4,3,4,5]))
+
+# Scope resolution(LEGB rule)
+'''
+Python resolves names using LEGB RULE:
+    - Local
+    - Enclosing
+    - Global
+    - Built-in
+'''
