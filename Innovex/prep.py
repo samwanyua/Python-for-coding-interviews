@@ -94,3 +94,28 @@ print(employee.pop('salary'))
 print(employee.items())
 print(employee.popitem()) # removes and return the last key-value pair as a tuple
 
+# passing function as arguments
+def greet(name):
+    return f"Hello, {name}"
+
+def printMessage(messageFunction, name):
+    message = messageFunction(name)
+    print(message)
+
+printMessage(greet, 'Innovex')
+
+# *args - allows a function to accept any number of positional arguments
+# arguments are passed as a tuple to the function
+
+def print_nums(*args):
+    for num in args:
+        print(num)
+
+print_nums(1,2,3,4,5,6,7)
+
+# **kwargs - allows a function to accept any number of keyword arguments
+# arguments are passed as dictionary where keys are argument names, values are argument values
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+print_info(name="Wanyua", role="Backend Developer", company="Innovex")
