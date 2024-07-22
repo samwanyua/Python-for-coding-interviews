@@ -162,3 +162,19 @@ Python resolves names using LEGB RULE:
     - Global
     - Built-in
 '''
+
+# Docstring 
+'''
+- is a string literal used to document modules, functions, classes and methods
+- enclosed in "..." or '...'
+- provide convenient way of associating documentation with python code
+'''
+
+# single line docstrings
+def addTwoNumbers(a,b):
+    """Add two numbers."""
+    return a + b
+print(addTwoNumbers.__doc__)
+
+addThreeNumbers = lambda x,y,z: x + y + z
+print(addThreeNumbers(45,45,45))
