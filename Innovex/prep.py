@@ -178,3 +178,13 @@ print(addTwoNumbers.__doc__)
 
 addThreeNumbers = lambda x,y,z: x + y + z
 print(addThreeNumbers(45,45,45))
+
+# dict comprehension - concise way of creating dictionaries
+nums = [1,2,3,4,5]
+square = {num : num **2 for num in nums}
+print(square.items())
+
+keys = ['name', 'age', 'city']
+values = ['Alice', 25, 'Nairobi']
+person_details = {key : value for key, value in zip(keys,values)}
+print(person_details)
