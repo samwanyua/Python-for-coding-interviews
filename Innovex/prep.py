@@ -329,3 +329,17 @@ public class Main{
 
 
 '''
+
+# slicing - technique of accessing a portion of a sequence
+# syntax -> sequence[start:stop:step]
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+slice1 = numbers[2:5] # excludes 5
+print(slice1)
+
+slice2 = numbers[:4] # beginning to index 4(excluded)
+slice3 = numbers[5:] # index 5 to end
+slice4 = numbers[::2] # slice with a step of 2
+slice5 = numbers[::-1] # reversing the list
+
+print(slice4)
+print(slice5)
