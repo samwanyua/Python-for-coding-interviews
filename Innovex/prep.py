@@ -208,3 +208,51 @@ deep_copy = copy.deepcopy(original)
 deep_copy[1] [0] = 'changed'
 print(original)
 print(deep_copy)
+
+# sort() function - sorts list in place
+nums = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+nums.sort()
+print(nums)
+
+# sorted() - returns new sorted list
+sorted_nums = sorted(nums)
+print(sorted_nums)
+
+
+# decorators - powerful and flexible way to modify the behavior of functions or methods
+# how they work - takes another function as an argument and returns a new function that typically extends the behavior of the original function.
+'''
+syntax
+
+@decorator
+def function_to_decorate():
+    pass
+    
+
+it's a shortform of
+function_to_decorate() = decorator(function_to_decorate)
+'''
+
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening before the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("hello")
+say_hello()
+
+
+# iterators - allow you to traverse through all the elements of a collection (such as a list or tuple) one element at a time.
+my_list = [1,2,3,4,5,6,7]
+
+my_iter = iter(my_list)
+
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
