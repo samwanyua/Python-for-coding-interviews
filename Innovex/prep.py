@@ -343,3 +343,31 @@ slice5 = numbers[::-1] # reversing the list
 
 print(slice4)
 print(slice5)
+
+#  How do you perform file I/O in Python?
+
+# writing ro a file
+# with open('example.txt', 'w') as file:
+#     file.write("Hello!")
+
+# reading from a file
+# with open('example.txt', 'r'):
+#     content = file.read()
+#     print(content)
+
+# shallow copy - copies the object but not nested objects
+# deep copy - recursively copies all copies of nested objects
+
+# difference between __str__ and __repr__ methods
+# __str__  -> provide 'nice' string representation of an object for end users
+# __repr__ -> provide detailed string representation of an object
+
+class MyClass:
+    def __str__(self):
+        return "This is MyClass object"
+    def __repr__(self):
+        return "MyClass()"
+    
+obj = MyClass()
+print(str(obj))
+print(repr(obj))
