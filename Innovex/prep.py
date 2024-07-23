@@ -256,3 +256,76 @@ print(next(my_iter))
 print(next(my_iter))
 print(next(my_iter))
 print(next(my_iter))
+
+'''
+Encapsulation - hides internal details of a class from external access
+
+public class Person{
+    private String name;
+    private int age;
+
+    // public method to get name
+    public String getName(){
+        return name;
+    }
+
+    // public method to set name
+    public void setName(String name){
+        this.name = name;
+    }
+
+    // public method to get age
+    public int getAge(){
+        return age;
+    }
+
+    // public method to set age
+    public void setAge(int age){
+        if(age > 0){
+            this.age = age;
+        }
+        else{
+            this.age = age;
+        }
+    }
+}
+
+Abstraction - hiding the complex details and showing only the necessary parts
+
+abstract class Shape{
+    abstract double area;
+    abstract double perimeter;
+}
+
+class Rectangle extends Shape{
+    private double width;
+    private double length;
+
+    public Rectangle(double width, double length){
+        this.width = width;
+        this.length = length;
+    }
+
+    @override
+    double area(){
+        return width * length;
+    }
+
+    @override
+    double perimeter(){
+        return 2 * (width + length);
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        Shape rectangle = new Rectangle(4,5);
+        System.out.println(rectangle.area());
+    }
+}
+
+
+
+
+
+'''
