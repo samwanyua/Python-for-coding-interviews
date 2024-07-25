@@ -3,7 +3,7 @@
 Class attributes - attributes shared by all instances of a class
 Defined inside a class but outside any instance methods
 Instance attributes - are unique to each object created from the class
-Class attributes are the same for all instances
+class attributes are the same for all instances
 
 Instance methods:
     - bound to the instance of the class,
@@ -21,7 +21,7 @@ Class methods:
 
 class Person:
     number_of_people = 0  # class attribute - specific to the class
-
+    GRAVITY = -9.8  # CONSTANTS
     def __init__(self, name):
         self.name = name
         Person.number_of_people += 1
