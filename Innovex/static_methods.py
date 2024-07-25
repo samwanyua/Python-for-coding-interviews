@@ -1,8 +1,8 @@
 # static methods - belongs to a class rather than instance of the class
-'''
+"""
 - they don't require access to instance or class itself
 - can be called on both the class itself and the instance of the class
-'''
+"""
 
 
 class Math:
@@ -16,3 +16,5 @@ class Math:
 
 
 print(Math.add(34, 23))
+ops = Math()
+print(ops.add(23, 434))
