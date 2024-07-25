@@ -43,7 +43,7 @@ course = Course("Software Engineering", 2)
 # add student
 course.add_student(student1)
 course.add_student(student2)
-# course.add_student(student3)
+print(course.add_student(student3))
 print(course.students[0].name)  # Sam
 
 print(course.get_average_grade())
