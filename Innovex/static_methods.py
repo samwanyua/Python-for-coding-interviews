@@ -14,7 +14,12 @@ class Math:
     def multiply(x, y):
         return x * y
 
+    @staticmethod
+    def print():
+        print("I love python")
+
 
 print(Math.add(34, 23))
 ops = Math()
 print(ops.add(23, 434))
+Math.print()
