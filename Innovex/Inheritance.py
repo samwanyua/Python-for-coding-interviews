@@ -14,7 +14,7 @@ class Pet:  # parent class
 class Cat(Pet):
     # adding more attributes
     def __init__(self, name, age, color):
-        super().__init__(name, age)
+        super().__init__(name, age)  # super references the parent class
         self.color = color
     def sound(self):
         print("Meow!")
