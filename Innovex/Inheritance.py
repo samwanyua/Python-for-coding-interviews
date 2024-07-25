@@ -23,3 +23,8 @@ pet.show()
 
 cat = Cat("Mews", 4)
 cat.show()
+cat.sound()
+
+dog = Dog("Rot", 23)
+dog.show()
+dog.sound()
