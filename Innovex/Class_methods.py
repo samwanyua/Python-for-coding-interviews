@@ -24,10 +24,12 @@ class Person:
 
     def __init__(self, name):
         self.name = name
+        Person.number_of_people += 1
 
 
 person1 = Person("Sam")
 person2 = Person("Jim")
+print(Person.number_of_people)
 
 Person.number_of_people = 89  # accessing and modifying a class attribute
 print(Person.number_of_people)
