@@ -24,14 +24,24 @@ class Person:
     GRAVITY = -9.8  # CONSTANTS
     def __init__(self, name):
         self.name = name
-        Person.number_of_people += 1
+        # Person.number_of_people += 1
+        Person.add_person()
+
+    @classmethod
+    def number_of_persons(cls):
+        return cls.number_of_people
+    @classmethod
+    def add_person(cls):
+        cls.number_of_people += 1
 
 
 person1 = Person("Sam")
 person2 = Person("Jim")
-print(Person.number_of_people)
+print(Person.number_of_persons())
 
-Person.number_of_people = 89  # accessing and modifying a class attribute
-print(Person.number_of_people)
-print(person1.number_of_people)
+# Person.number_of_people = 89  # accessing and modifying a class attribute
+# print(Person.number_of_people)
+# print(person1.number_of_people)
+
+
 
