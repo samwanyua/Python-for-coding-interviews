@@ -15,18 +15,16 @@ class Dog:
 
     def get_age(self):
         return self.age
-    def add(self, x):
-        return x + 100
 
-    def bark(self):
-        print("bark")
+    def set_age(self, age):
+        self.age = age
 
 
 d = Dog("Will", 24)  # instantiating - creating new instance of a class
 print(type(d))
-d.bark()  # bark
-print(d.add(45))
 print(d.name)
 print(d.get_name())
+print(d.get_age())
+d.set_age(56)
 print(d.get_age())
 
