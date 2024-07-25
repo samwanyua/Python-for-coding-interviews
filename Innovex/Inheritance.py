@@ -1,5 +1,5 @@
 # Inheritance
-class Pet:
+class Pet:  # parent class
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -9,9 +9,18 @@ class Pet:
 
     def sound(self):
         print("I don't know what I speak")
+
+
 class Cat(Pet):
+    # adding more attributes
+    def __init__(self, name, age, color):
+        super().__init__(name, age)
+        self.color = color
     def sound(self):
         print("Meow!")
+
+    def show(self):
+        print(f"I am {self.name} and I am {self.color} and {self.age} years old!")
 
 
 class Dog(Pet):
@@ -22,10 +31,11 @@ class Dog(Pet):
 class Fish(Pet):
     pass
 
+
 pet = Pet("Tim", 32)
 pet.show()
 
-cat = Cat("Mews", 4)
+cat = Cat("Mews", 4, "White with dots")
 cat.show()
 cat.sound()
 
