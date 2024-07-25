@@ -20,7 +20,7 @@ Class methods:
 
 
 class Person:
-    number_of_people = 0  # class attribute
+    number_of_people = 0  # class attribute - specific to the class
 
     def __init__(self, name):
         self.name = name
@@ -31,4 +31,5 @@ person2 = Person("Jim")
 
 Person.number_of_people = 89  # accessing and modifying a class attribute
 print(Person.number_of_people)
+print(person1.number_of_people)
 
