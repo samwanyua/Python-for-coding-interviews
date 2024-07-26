@@ -100,3 +100,11 @@ class Library:
 
     def __str__(self):
         return self.name
+
+    def add_book(self, book):
+        self.books.append(book)
+
+    def add_member(self, member):
+        self.members.append(member)
+
+    
