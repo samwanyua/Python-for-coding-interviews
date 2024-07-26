@@ -109,6 +109,8 @@ class Library:
 
     def find_book(self, title):
         for book in self.books:
-            if book.title = title:
+            if book.title == title:
                 return book
         return None
+
+
