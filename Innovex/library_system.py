@@ -113,4 +113,8 @@ class Library:
                 return book
         return None
 
-
+    def find_member(self, name):
+        for member in self.members:
+            if member.name == name:
+                return member
+        return None
