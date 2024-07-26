@@ -132,3 +132,19 @@ class Library:
         if member and book:
             return member.return_book(book)
         return False
+
+
+# Create library
+library = Library("Oxford Library")
+
+# Create books
+book1 = Book("Pure in Heart", "J. Kelly")
+book2 = Book("Every Good Endeavour", "Tim Keller")
+book3 = Book("Corona Virus and Christ", "John Piper")
+
+# Add books to library
+library.add_book(book1)
+library.add_book(book2)
+library.add_book(book3)
+
+# Create members
