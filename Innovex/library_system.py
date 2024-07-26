@@ -94,4 +94,9 @@ class Library:
     @property
     def members(self):
         return self._members
-    
+
+    def __repr__(self):
+        return f"Library('{self.name}'"
+
+    def __str__(self):
+        return self.name
