@@ -21,6 +21,12 @@ class Employee:
         self.first = first
         self.last = last
 
+    @fullname.deleter
+    def fullname(self):
+        print('Deleted')
+        self.first = None
+        self.last = None
+
 
 emp_1 = Employee("John", "Smith", 345000)
 print(emp_1.__str__())
@@ -30,3 +36,6 @@ print(emp_1.fullname)
 
 emp_1.fullname = "Barrack Obama"
 print(emp_1.fullname)
+print(emp_1.__str__())
+
+del emp_1.fullname
