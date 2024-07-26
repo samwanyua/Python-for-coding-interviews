@@ -30,3 +30,9 @@ class Book:
             self._is_borrowed = value
         else:
             raise ValueError("is_borrowed must be a boolean")
+
+    def __repr__(self):
+        return f"Book('{self.title}', '{self.author}'"
+    def __str__(self):
+        return f"'{self.title}' by '{self.author}'"
+    
