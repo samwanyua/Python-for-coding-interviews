@@ -75,4 +75,23 @@ class Member:
             self.borrowed_books.remove(book)
             return True
         return False
+
+
+class Library:
+    def __init__(self, name):
+        self._name = name
+        self._books = []
+        self._members = []
+
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def books(self):
+        return self._books
+
+    @property
+    def members(self):
+        return self._members
     
