@@ -15,6 +15,7 @@ class Employee:
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
+        self.email = (first + '.' + last + '@gmail.com').lower()
         self.pay = pay
 
     def fullname(self):
@@ -29,7 +30,7 @@ class Employee:
 
     # `__str__` is used for readable representation of objects, meant for enduser
     def __str__(self):
-        return f"{self.first} {self.last} {self.pay}"
+        return f"{self.email}  {self.pay} "
 
 
 employee_1 = Employee("Sam", "Tim", 30000)
