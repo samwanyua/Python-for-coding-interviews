@@ -32,7 +32,7 @@ class Book:
             raise ValueError("is_borrowed must be a boolean")
 
     def __repr__(self):
-        return f"Book('{self.title}', '{self.author}'"
+        return f"Book('{self.title}', '{self.author}')"
     def __str__(self):
         return f"'{self.title}' by '{self.author}'"
     def borrow(self):
@@ -45,4 +45,22 @@ class Book:
             self.is_borrowed = False
             return True
         return False
+
+
+class Member:
+    def __init__(self, name):
+        self._name = name
+        self._borrowed_books = []
+
+    @property
+    def name(self):
+        return self._name
+    @property
+    def borrowed_books(self):
+        return self._borrowed_books
+    def __repr__(self):
+        return f"Member('{self.name}')"
+
+    def __str__(self):
+        return self.name
     
