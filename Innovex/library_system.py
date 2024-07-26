@@ -118,3 +118,10 @@ class Library:
             if member.name == name:
                 return member
         return None
+
+    def borrow_book(self, member_name, book_title):
+        member = self.find_member(member_name)
+        book = self.find_book(book_title)
+        if member and book:
+            return member.borrow_book(book)
+        return False
