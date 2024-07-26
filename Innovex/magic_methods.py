@@ -34,6 +34,8 @@ class Employee:
 
     def __add__(self, other):
         return self.pay + other.pay
+    def __len__(self):
+        return len(self.fullname())
 
 
 employee_1 = Employee("Sam", "Tim", 30000)
@@ -58,3 +60,4 @@ print(str.__add__('sam', 'hopper'))
 print(employee_2 + employee_1)
 # checking length using a dunder method
 print([34, 23, 43, 32, 54, 54, 34, 23, 43, 43, 65, 5, 443, 345, 34].__len__())
+print(len(employee_2))  # same as print(employee_2.__len__()
