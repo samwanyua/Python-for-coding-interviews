@@ -148,3 +148,9 @@ library.add_book(book2)
 library.add_book(book3)
 
 # Create members
+member1 = Member("Isaac")
+member2 = Member("Abraham")
+
+# Add members to Library
+library.add_member(member1)
+library.add_member(member2)
