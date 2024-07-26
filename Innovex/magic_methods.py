@@ -30,7 +30,10 @@ class Employee:
 
     # `__str__` is used for readable representation of objects, meant for enduser
     def __str__(self):
-        return f"{self.email}  {self.pay} "
+        return f"{self.email}  {self.pay}"
+
+    def __add__(self, other):
+        return self.pay + other.pay
 
 
 employee_1 = Employee("Sam", "Tim", 30000)
@@ -51,3 +54,5 @@ print(employee_1.__repr__())
 # other dunder methods
 print(int.__add__(453, 234))
 print(str.__add__('sam', 'hopper'))
+
+print(employee_2 + employee_1)
