@@ -107,4 +107,8 @@ class Library:
     def add_member(self, member):
         self.members.append(member)
 
-    
+    def find_book(self, title):
+        for book in self.books:
+            if book.title = title:
+                return book
+        return None
