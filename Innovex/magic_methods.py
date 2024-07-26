@@ -43,3 +43,6 @@ print(employee_2.pay)
 
 print(repr(employee_2))
 print(str(employee_1))
+# alternatively
+print(employee_2.__str__())
+print(employee_1.__repr__())
