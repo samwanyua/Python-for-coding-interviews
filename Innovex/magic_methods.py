@@ -56,3 +56,5 @@ print(int.__add__(453, 234))
 print(str.__add__('sam', 'hopper'))
 
 print(employee_2 + employee_1)
+# checking length using a dunder method
+print([34, 23, 43, 32, 54, 54, 34, 23, 43, 43, 65, 5, 443, 345, 34].__len__())
