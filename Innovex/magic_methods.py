@@ -47,3 +47,7 @@ print(str(employee_1))
 # alternatively
 print(employee_2.__str__())
 print(employee_1.__repr__())
+
+# other dunder methods
+print(int.__add__(453, 234))
+print(str.__add__('sam', 'hopper'))
