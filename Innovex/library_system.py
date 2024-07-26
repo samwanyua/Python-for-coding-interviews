@@ -35,4 +35,9 @@ class Book:
         return f"Book('{self.title}', '{self.author}'"
     def __str__(self):
         return f"'{self.title}' by '{self.author}'"
+    def borrow(self):
+        if not self._is_borrowed:
+            self.is_borrowed = True
+            return True
+        return False
     
