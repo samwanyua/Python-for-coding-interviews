@@ -63,4 +63,11 @@ class Member:
 
     def __str__(self):
         return self.name
+
+    def borrow_book(self, book):
+        if book.borrow():
+            self._borrowed_books.append(book)
+            return True
+        return False
+
     
