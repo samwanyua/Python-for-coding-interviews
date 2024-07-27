@@ -154,3 +154,7 @@ member2 = Member("Abraham")
 # Add members to Library
 library.add_member(member1)
 library.add_member(member2)
+
+# Borrow books
+library.borrow_book("Isaac", "Pure in Heart")
+library.borrow_book("Abraham", "Every Good Endeavour")
