@@ -158,3 +158,15 @@ library.add_member(member2)
 # Borrow books
 library.borrow_book("Isaac", "Pure in Heart")
 library.borrow_book("Abraham", "Every Good Endeavour")
+
+# Print borrowed books
+print(f"Isaac's borrowed books: {[str(book) for book in member1.borrowed_books]}")
+print(f"Abraham's borrowed books: {[str(book) for book in member2.borrowed_books]}")
+
+# Return books
+library.return_book("Isaac", "Pure in Heart")
+library.return_book("Abraham", "Every Good Endeavour")
+
+# Print borrowed books after return
+print(f"Isaac's borrowed books after return: {[str(book) for book in member1.borrowed_books]}")
+print(f"Abraham's borrowed books after return: {[str(book) for book in member2.borrowed_books]}")
