@@ -170,3 +170,4 @@ library.return_book("Abraham", "Every Good Endeavour")
 # Print borrowed books after return
 print(f"Isaac's borrowed books after return: {[str(book) for book in member1.borrowed_books]}")
 print(f"Abraham's borrowed books after return: {[str(book) for book in member2.borrowed_books]}")
+print(f"Abraham's borrowed books after return: {[str(book) for book in member2.borrowed_books]}")
