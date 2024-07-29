@@ -11,3 +11,10 @@ while values can be of any data type.
     * open addressing - finding an alternative buckets to handle collisions
 - Keys are immutable data types
 """
+city_map = {}  # alternatively city_map = dict()
+cities = ["Calgary", "Vancouver", "Toronto"]
+city_map["Canada"] = []
+city_map["Canada"] += cities
+
+
+
