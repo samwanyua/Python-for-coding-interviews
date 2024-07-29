@@ -9,5 +9,5 @@ while values can be of any data type.
 - Collision handling (keys generating same hashcode) hashmaps employ below techniques:
     * chaining - storing multiple key-value pairs in the same bucket as a linked list
     * open addressing - finding an alternative buckets to handle collisions
-
+- Keys are immutable data types
 """
