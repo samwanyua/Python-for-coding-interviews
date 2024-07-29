@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 # Hashmaps/ Dictionaries - store key-value pairs
 """
 - Each element in a hashmap consists of a key and a value.
@@ -15,6 +17,16 @@ city_map = {}  # alternatively city_map = dict()
 cities = ["Calgary", "Vancouver", "Toronto"]
 city_map["Canada"] = []
 city_map["Canada"] += cities
+print(city_map)
+print(city_map.items())
+# DefaultDict - all keys are already initialized
+# from collections import defaultdict
+towns_map = defaultdict(list)
+towns = ["Nairobi", "Mombasa", "Nakuru"]
+towns_map["Kenya"] += towns
+print(towns_map.items())
+
+
 
 
 
