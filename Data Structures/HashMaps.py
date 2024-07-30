@@ -50,6 +50,20 @@ Output: [["a"]]
 """
 
 
+class Solution:
+    def group_anagrams(self, strs: List[str]) -> List[List[str]]:
+        # go through each word and check if the combination of the letter is already a key in the hashMap
+        anagram_map = defaultdict(list)
+        for word in strs:
+            sorted_word = ''.join(sorted(word))
+            anagram_map[sorted_word].append(word)
+
+        return list(anagram_map.values())
+
+
+
+
+
 
 
 
