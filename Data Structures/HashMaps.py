@@ -25,6 +25,8 @@ towns_map = defaultdict(list)
 towns = ["Nairobi", "Mombasa", "Nakuru"]
 towns_map["Kenya"] += towns
 print(towns_map.items())
+print(towns_map.keys())
+print(towns_map.values())
 
 
 
