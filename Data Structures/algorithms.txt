@@ -2,3 +2,8 @@ Search algorithms:
 * Binary search
 - time complexity: O(log n)
 
+* DFS (depth first search)
+- Real life application: solving a maze
+- time complexity: O(v + e) # where v are vertices/nodes and e= edges/branches
+
+* BFS(Breadth first search)
