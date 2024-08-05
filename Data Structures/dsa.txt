@@ -1,0 +1,14 @@
+Arrays
+- Ordered collection of data
+- zero-based indexing
+- time complexity:
+    > read - O(1)
+    > insert - O(N)
+    > delete - O(N)
+- arrays are stored in contiguous memory
+
+Linked list
+- time complexity:
+       > read - O(n)
+       > insert - O(1)
+       > delete - O(1)
