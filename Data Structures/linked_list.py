@@ -18,6 +18,15 @@ class LinkedList(object):
     def __init__(self, root=None):
         self.root = root
         self.size = 0
-    def get
+    def get_size(self):
+        return self.size
+    # add data
+    def add(self, data):
+        new_node = Node(data, self.root)
+        self.root = new_node
+        self.size += 1
+        
+        
+
 
 
