@@ -15,12 +15,30 @@ Linked list
        > delete - O(1)
        > search - O(1)
 
-Hashmaps
+Hashmaps/hashTables/dictionaries
 - key-value pairs
 - hashmaps are unordered
 - time complexity:
     > read - O(1)
     > insert - O(1)
     > delete - O(1)
+
+Stacks
+- Last In First Out
+- time complexity:
+    > push - O(1) # add a new element
+    > pop - O(1) # remove the top element
+    > peek - O(1) # check the top element
+
+Queues
+- First in First Out
+- time complexities:
+    > enqueue - O(1)  # adding a new element to the back of the queue
+    > deque - O(1) # removing the front element in a queue
+    > front - O(1) # checking the front most element
+
+
+
+
 
 
