@@ -14,4 +14,13 @@ Linked list
        > insert - O(1)
        > delete - O(1)
        > search - O(1)
-  
+
+Hashmaps
+- key-value pairs
+- hashmaps are unordered
+- time complexity:
+    > read - O(1)
+    > insert - O(1)
+    > delete - O(1)
+
+
