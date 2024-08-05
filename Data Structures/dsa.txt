@@ -8,7 +8,10 @@ Arrays
 - arrays are stored in contiguous memory
 
 Linked list
+- store ordered list of elements
 - time complexity:
        > read - O(n)
        > insert - O(1)
        > delete - O(1)
+       > search - O(1)
+  
