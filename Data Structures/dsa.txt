@@ -37,6 +37,12 @@ Queues
     > deque - O(1) # removing the front element in a queue
     > front - O(1) # checking the front most element
 
+Trees
+- have nodes connected to each other by edges
+- Binary Search tree:
+    > all the children on the left are less than parent node, and all child nodes on the right  are greater than the parent node
+
+
 
 
 
