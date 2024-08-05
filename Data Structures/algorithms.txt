@@ -1,0 +1,4 @@
+Search algorithms:
+* Binary search
+- time complexity: O(log n)
+
