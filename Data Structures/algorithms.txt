@@ -3,7 +3,12 @@ Search algorithms:
 - time complexity: O(log n)
 
 * DFS (depth first search)
+- DFS explores the graph by going as deep as possible along each branch before backtracking.
 - Real life application: solving a maze
 - time complexity: O(v + e) # where v are vertices/nodes and e= edges/branches
 
 * BFS(Breadth first search)
+- Application: chess algorithm
+- BFS explores the graph level by level, starting from a given node,
+ and visits all neighbors at the present depth before moving on to nodes at the next depth level.
+- time complexity: O(v + e) # where v are vertices/nodes and e= edges/branches
