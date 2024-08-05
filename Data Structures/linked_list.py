@@ -25,7 +25,22 @@ class LinkedList(object):
         new_node = Node(data, self.root)
         self.root = new_node
         self.size += 1
-        
+    # remove data
+    def remove(self, data):
+        this_node = self.root
+        prev_node = Node
+        while this_node:
+            if this_node.get_data() == data:
+                if prev_node:
+                    prev_node.set_next(this_node.get_next())
+                else:
+                    self.root = this_node
+                self.size -= 1
+                return True # data removed
+            else:
+                prev_node = this_node
+                this_node = this_node.get_next()
+        return False
         
 
 
