@@ -12,3 +12,16 @@ Search algorithms:
 - BFS explores the graph level by level, starting from a given node,
  and visits all neighbors at the present depth before moving on to nodes at the next depth level.
 - time complexity: O(v + e) # where v are vertices/nodes and e= edges/branches
+
+Sorting algorithms
+* Insertion sort
+- Best case: O(n) # when everything is sorted
+- Worst case: O(n^2) # when nothing is sorted
+- Best for when lists are already sorted or small
+
+* Merge sort
+- Follows divide and conquer algorithm
+- It's a recursive algorithm
+- Time complexity - O(n log n)
+
+
