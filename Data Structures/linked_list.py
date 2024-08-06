@@ -38,7 +38,7 @@ class LinkedList(object):
                 else:
                     self.root = current_node
                 self.size -= 1
-                return True # data removed
+                return True  # data removed
             else:
                 prev_node = current_node
                 current_node = current_node.get_next()
