@@ -20,3 +20,11 @@ def squares(x):
 squared_numbers = list(map(squares, numbers))
 squared_numbers.sort()
 print(squared_numbers)
+
+# converting list to tuple
+squared_tuples = tuple(squared_numbers)
+print(squared_tuples)
+
+# list to set
+even_set= set(even_numbers)
+print(even_set)
