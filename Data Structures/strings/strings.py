@@ -99,3 +99,11 @@ def strs_permutations(str):
     return permutation_list, perm_count
 
 print(strs_permutations("samuel"))
+
+# count the frequency of a characters in a string
+def char_frequency(str):
+    freq = {} 
+    for char in str:
+        freq[char] = freq.get(char, 0) + 1
+    return freq
+print(char_frequency("samuel wanyoro"))
