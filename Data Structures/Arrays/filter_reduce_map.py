@@ -12,3 +12,11 @@ def is_even(n):
     return n % 2 == 0
 even_numbers = list(filter(is_even, numbers))
 print(even_numbers)
+
+# map method
+def squares(x):
+    return x * x
+
+squared_numbers = list(map(squares, numbers))
+squared_numbers.sort()
+print(squared_numbers)
