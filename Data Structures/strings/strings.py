@@ -81,5 +81,12 @@ print(longest_common_prefix(["samm","sammanthing", "sammand"]))
 
 # if a string contains digits
 def is_digits_only(s):
-    return s.isdigit()
+    # solution 1
+    # return s.isdigit()
+
+    # solution 2
+    return all(char.isdigit() for char in s) # The all() function returns True if all elements of the iterable are True. Otherwise, it returns False
+
+    # solutin 3
+    return s.isnumeric()
 print(is_digits_only("dsj3dfkl"))
