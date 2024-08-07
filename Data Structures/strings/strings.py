@@ -128,3 +128,8 @@ strings:
 - random access - O(1)
 - check if an element exist - O(n)
 """
+
+# append at the end of string
+first_name = "Juliu"
+fu = first_name + 's'
+print(fu)
