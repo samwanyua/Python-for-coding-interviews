@@ -65,3 +65,4 @@ class Solution:
             a += 1
         
         return ''.join(s)
+    # time complexity: O(A + B), space complexity: O(A + B)
