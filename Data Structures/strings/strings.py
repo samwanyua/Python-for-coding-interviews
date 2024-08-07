@@ -66,3 +66,17 @@ def replace_spaces(y):
     return y.replace(" ", "%20")
 print(replace_spaces("samus kinutiha  jsdk ds s"))
 
+# find the longest common prefix
+def longest_common_prefix(strs):
+    if not strs: # if the strs is empty
+        return ""
+    prefix = strs[0] # prefix is set to the first string in the list
+    for s in strs[1:]: # iterate over remaining strings
+        while s[:len(prefix)] != prefix and prefix: # s[:len(prefix)] != prefix checks if the extracted substring from s (s[:len(prefix)]) is not equal to the current prefix
+            # and prefix - checks if 'prefix' is not an empty string
+            prefix = prefix[:-1] # removing the last character
+    return prefix
+
+print(longest_common_prefix(["samm","sammanthing", "sammand"]))
+
+
