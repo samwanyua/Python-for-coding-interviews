@@ -112,3 +112,8 @@ print(char_frequency("samuel wanyoro"))
 my_string = "python is awesome"
 sorted_string = ''.join(sorted(my_string))
 print(sorted_string)
+
+# strings are immutable
+s = 'suaymx'
+# s[1] = 'e' # won't work
+print(s[:-2])
