@@ -90,3 +90,10 @@ def is_digits_only(s):
     # solutin 3
     return s.isnumeric()
 print(is_digits_only("dsj3dfkl"))
+
+#  find all permutation of a string
+from itertools import permutations
+def strs_permutations(str):
+    [''.join(p) for p in permutations(str)]
+
+print(strs_permutations("samuel"))
