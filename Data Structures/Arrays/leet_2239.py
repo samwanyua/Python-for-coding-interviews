@@ -42,3 +42,5 @@ class Solution:
             return abs(closest)
         else:
             return closest
+# TC: O(N)
+# SC: O(1)
