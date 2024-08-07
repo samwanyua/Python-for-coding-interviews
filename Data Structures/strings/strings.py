@@ -42,3 +42,22 @@ def count_vowels(x):
     vowels = "aeiouAEIOU"
     return sum(1 for char in x if char in vowels) # 1 for each character
 print(count_vowels("samuel wanyua "))
+
+# check if two strings are anagrams
+def are_anagrams(s1,s2):
+    # solution 1
+    # return sorted(s1) == sorted(s2)
+
+    # solution 2
+    # check if strings have the same length
+    if len(s1) != len(s2):
+        return False
+    # initialize dictionaries
+    count1,count2 = {},{}
+    for char in s1:
+        count1[char] = count1.get(char, 0) + 1
+    for char in s2:
+        count2[char] = count2.get(char,0) + 1
+    return count1 == count2
+print(are_anagrams("amss", "mass"))
+
