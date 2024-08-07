@@ -117,3 +117,14 @@ print(sorted_string)
 s = 'suaymx'
 # s[1] = 'e' # won't work
 print(s[:-2])
+
+print('x' in s)
+
+"""
+strings:
+- appending,popping at the end - O(N)
+- inserting, deleting not from the end - O(n)
+- modify and element - O(N)
+- random access - O(1)
+- check if an element exist - O(n)
+"""
