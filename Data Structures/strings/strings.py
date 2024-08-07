@@ -37,4 +37,8 @@ def find_first_non_repeating_str(x):
     return None
 print(find_first_non_repeating_str("swiss"))
 
-
+# count the number of vowels
+def count_vowels(x):
+    vowels = "aeiouAEIOU"
+    return sum(1 for char in x if char in vowels) # 1 for each character
+print(count_vowels("samuel wanyua "))
