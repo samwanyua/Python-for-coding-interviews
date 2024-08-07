@@ -47,7 +47,7 @@ class Solution:
 
         word = 1
 
-        while a < A:
+        while a < A and b < B:
             if word == 1:
                 s.append(word1[a])
                 a += 1
@@ -56,10 +56,12 @@ class Solution:
                 s.append(word[b])
                 b += 1
                 word = 1
+        # append remaining words of word1      
         while a < A:
             s.append(word1[a])
             a += 1
         
+        # append remaining words of word2
         while b < B:
             s.append(word2[b])
             a += 1
