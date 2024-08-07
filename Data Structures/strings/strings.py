@@ -107,3 +107,8 @@ def char_frequency(str):
         freq[char] = freq.get(char, 0) + 1
     return freq
 print(char_frequency("samuel wanyoro"))
+
+# sorting strings
+my_string = "python is awesome"
+sorted_string = ''.join(sorted(my_string))
+print(sorted_string)
