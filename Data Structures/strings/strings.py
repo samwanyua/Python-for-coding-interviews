@@ -79,4 +79,7 @@ def longest_common_prefix(strs):
 
 print(longest_common_prefix(["samm","sammanthing", "sammand"]))
 
-
+# if a string contains digits
+def is_digits_only(s):
+    return s.isdigit()
+print(is_digits_only("dsj3dfkl"))
