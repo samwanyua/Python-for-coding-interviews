@@ -15,5 +15,17 @@ def x_func(b):
     return freq
 print(x_func([3,3,4,5,6,7,4,3,4,5,2,3,4,6,7,4,4,4,5,2,4,5]))
 
+# sorting lists
+# sorted() function returns a new list that is sorted, leaving original list unchanged
+my_list = [4,2,9,1,5,6]
+sorted_list = sorted(my_list)
+sorted_list2 = sorted(my_list, reverse=True)
+print(my_list)
+print(sorted_list2)
+
+# list.sort() -> sorts the list in place and modifies the original list, returns None
+marks = [ 3,4,5,3,2,56,5,3,23,4,323,234]
+marks.sort()
+print(marks)
 
 
