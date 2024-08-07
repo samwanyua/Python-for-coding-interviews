@@ -45,3 +45,8 @@ print(sort_by_keys)
 # sort by values
 sort_by_values = dict(sorted(my_dict.items(), key=lambda item: item[1]))
 print(sort_by_values)
+
+weights = [1,2,4,3]
+# insert not at the end
+weights.insert(2,44)
+print(weights) # O(n)
