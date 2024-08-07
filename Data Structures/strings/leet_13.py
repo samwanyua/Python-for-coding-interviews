@@ -63,5 +63,5 @@ class Solution:
                 sum += d[s[index]]
                 index += 1
         return sum
-
+# time complexity: O(n), space complexity: O(1)
 
