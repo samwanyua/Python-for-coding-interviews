@@ -26,3 +26,12 @@ sub6 = s[-3:] # "efg"
 # reverse string
 sub7 = s[::-1]
 
+# find the first non-repeating character
+def find_first_non_repeating_str(x):
+    count = {} # hashmap
+    for char in x:
+        count[char] = count.get(char,0) + 1 # counting characters in a hashmap
+    for char in x:
+        if count[char] == 1:
+            return char
+    return None
