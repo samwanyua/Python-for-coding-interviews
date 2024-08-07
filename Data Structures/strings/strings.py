@@ -35,3 +35,6 @@ def find_first_non_repeating_str(x):
         if count[char] == 1:
             return char
     return None
+print(find_first_non_repeating_str("swiss"))
+
+
