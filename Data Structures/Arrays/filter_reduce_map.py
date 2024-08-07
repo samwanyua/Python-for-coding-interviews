@@ -28,3 +28,15 @@ print(squared_tuples)
 # list to set
 even_set= set(even_numbers)
 print(even_set)
+
+"""
+List - is a dynamic array
+- appending to the end = O(1)
+- popping from the end - O(1)
+- insertion, deletion not from the end - O(n)
+- modifying an element = O(1)
+- random access = O(1)
+- check if an element exists - O(n)
+
+
+"""
