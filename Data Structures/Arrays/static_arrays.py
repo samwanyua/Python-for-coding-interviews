@@ -50,3 +50,15 @@ weights = [1,2,4,3]
 # insert not at the end
 weights.insert(2,44)
 print(weights) # O(n)
+
+"""
+List - is a dynamic array
+- appending to the end = O(1)
+- popping from the end - O(1)
+- insertion, deletion not from the end - O(n)
+- modifying an element = O(1)
+- random access = O(1)
+- check if an element exists - O(n)
+
+
+"""
