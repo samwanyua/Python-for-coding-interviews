@@ -61,3 +61,8 @@ def are_anagrams(s1,s2):
     return count1 == count2
 print(are_anagrams("amss", "mass"))
 
+# replace all spaces with %20
+def replace_spaces(y):
+    return y.replace(" ", "%20")
+print(replace_spaces("samus kinutiha  jsdk ds s"))
+
