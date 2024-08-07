@@ -94,6 +94,8 @@ print(is_digits_only("dsj3dfkl"))
 #  find all permutation of a string
 from itertools import permutations
 def strs_permutations(str):
-    [''.join(p) for p in permutations(str)]
+    permutation_list = [''.join(p) for p in permutations(str)]
+    perm_count= len(permutation_list)
+    return permutation_list, perm_count
 
 print(strs_permutations("samuel"))
