@@ -7,13 +7,16 @@ class SinglyNode:
     def __str__(self) -> str:
         return str(self.value)
     # display linked list
-    def display(self):
-        current = self
-        elements = []
-        while current:
-            elements.append(str(current.value))
-            current = current.next
-        print(' -> '.join(elements))
+    # def display(self):
+    #     current = self
+    #     elements = []
+    #     while current:
+    #         elements.append(str(current.value))
+    #         current = current.next
+    #     print(' -> '.join(elements))
+
+   
+
 
     
 Head = SinglyNode(1)
@@ -36,5 +39,14 @@ while current:
     current = current.next
 
 # display
-Head.display()
+def display(head):
+        current = head
+        elements = []
+        while current:
+            elements.append(str(current.value))
+            current = current.next
+        print(' -> '.join(elements))
+display(Head)
+
+
 
