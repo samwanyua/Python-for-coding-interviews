@@ -38,3 +38,4 @@ class Solution:
                 if i >= len(s) or s[i] != char: # If the current index is out of bounds or characters don't match
                     return strs[0][:i]
         return strs[0]
+    # Time complexity: O(n * m), space complexity: O(1)
