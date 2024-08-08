@@ -6,14 +6,7 @@ class SinglyNode:
 
     def __str__(self) -> str:
         return str(self.value)
-    # display linked list
-    # def display(self):
-    #     current = self
-    #     elements = []
-    #     while current:
-    #         elements.append(str(current.value))
-    #         current = current.next
-    #     print(' -> '.join(elements))
+    
 
    
 
@@ -46,7 +39,17 @@ def display(head):
             elements.append(str(current.value))
             current = current.next
         print(' -> '.join(elements))
+
 display(Head)
 
+# search for a node value - O(1)
+def search(head, val):
+    curr = head
+    while curr:
+        if val == curr.value:
+            return True
+        curr = curr.next
+    return False
 
+print(search(Head,10))
 
