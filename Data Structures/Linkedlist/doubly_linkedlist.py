@@ -27,3 +27,11 @@ def insert_first(head, tail, val):
     return new_node, tail
 head,tail = insert_first(head, tail, 3)
 display(head)
+
+# insert at the end - O(1)
+def insert_last(head, tail, val):
+    new_node = DoublyNode(val, prev=tail)
+    tail.next = new_node
+    return head, new_node
+head,tail = insert_last(head, tail, 43)
+display(head)
