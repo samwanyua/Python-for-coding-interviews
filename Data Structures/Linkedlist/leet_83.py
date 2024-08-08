@@ -36,4 +36,4 @@ class Solution:
             else:
                 curr = curr.next
         return head
-
+# Time complexity: O(n), space complexity: O(1)
