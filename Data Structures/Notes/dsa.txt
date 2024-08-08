@@ -11,8 +11,14 @@ Linked list
 - store ordered list of elements
 - time complexity:
        > read - O(n)
-       > insert - O(1)
-       > delete - O(1)
+       > insert:
+            * head -> O(1)
+            * tail -> O(n), O(1) for doubly linked list
+            * specific position -> O(n)
+       > delete:
+            * head -> O(1)
+            * tail -> O(n), O(1) for doubly linked list
+            * specific position -> O(n)
        > search - O(1)
 
 Hashmaps/hashTables/dictionaries
